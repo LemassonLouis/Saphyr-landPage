@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Poppins Regular", sans-serif;
+    /* font-size: 24px; */
+    color: var(--text-color-primary-2);
+    background: linear-gradient(90deg, var(--background-color-1), var(--background-color-2));
+}
+
+h1, h2 {
+    font-family: "K2D ExtraBold", sans-serif;
+    color: var(--text-color-primary-1);
+}
+
+h1 {
+    /* font-size: 60px; */
+}
+
+h2 {
+    /* font-size: 50px; */
+}
+
+a {
+    color: var(--text-color-primary-1);
+    opacity: 1;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+button {
+    /* background-color: linear-gradient(#0575E6, #021B79); */
+    /* background: linear-gradient(264.43deg, rgba(5, 117, 230, 0.75) -89.49%, #021B79 92.02%); */
+    padding: 15px 40px;
+    font-family: "Poppins Regular", sans-serif;
+    /* font-size: 24px; */
+    font-size: 9pt;
+    color: var(--text-color-primary-1);
+    background: linear-gradient(90deg, var(--CTA-1), var(--CTA-2));
+    border: 0;
+    border-radius: 43px;
+    opacity: 1;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+#wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#logo {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+#logo>img {
+    width: 15%;
+}
+
+#presentation {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    margin: 50px;
+    margin-bottom: 20px;
+
+    background: rgba(217, 217, 217, 0.04);
+    backdrop-filter: blur(65px);
+    border-radius: 38px;
+}
+
+#presentation>#infos {
+    box-sizing: border-box;
+    align-self: center;
+    width: 50%;
+    padding: 60px 20px 60px 120px;
+}
+
+#presentation>#infos>button {
+    margin-top: 10px;
+}
+
+#presentation>#image {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+}
+
+#presentation>#image>img {
+    position: absolute;
+    bottom: -27px;
+    right: 50%;
+    width: 70%;
+    transform: translate(50%);
+    z-index: 0;
+}
+
+
+#arrow {
+    display: block;
+    margin: auto;
+    width: 30px;
+}
+
+#partenaires {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 86%;
+}
+
+
+#orga-event {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 80px 100px 0px 100px;
+}
+
+#orga-event>#infos {
+    align-self: center;
+    width: 50%;
+}
+
+#orga-event>#infos>h2 {
+    margin-bottom: 50px;
+}
+
+#orga-event>#infos>button {
+    margin-top: 20px;
+}
+
+
+#orga-event>#image {
+    text-align: center;
+    width: 50%
+}
+
+#orga-event>#image>img {
+    width: 80%;
+}
+
+
+#artiste {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px 100px;
+}
+
+#artiste>#infos {
+    align-self: center;
+    width: 50%;
+}
+
+#artiste>#infos>h2 {
+    margin-bottom: 50px;
+}
+
+#artiste>#infos>button {
+    margin-top: 20px;
+}
+
+
+#artiste>#image {
+    text-align: center;
+    width: 50%
+}
+
+#artiste>#image>img {
+    width: 80%;
+}
+
+
+#download {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+    margin: 120px 100px;
+
+    background: rgba(217, 217, 217, 0.04);
+    backdrop-filter: blur(65px);
+    border-radius: 38px;
+}
+
+#download>#infos {
+    box-sizing: border-box;
+    align-self: center;
+    width: 50%;
+    padding: 20px 20px 20px 60px;
+}
+
+#download>#infos>button {
+    margin-top: 10px;
+}
+
+#download>#image {
+    position: relative;
+    width: 50%;
+}
+
+#download>#image>img {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    width: 70%;
+    transform: translate(50%);
+    z-index: 0;
+}
+
+
+#over-bulles {
+    position: relative;
+}
+
+#bulles {
+    position: absolute;
+    display: block;
+    width: 20%;
+    right: 50px;
+    bottom: -500px;
+    z-index: 0;
+}
+
+
+
+footer {
+    height: 220px;
+    text-align: center;
+    background-color: #080D1A;
+}
+
+footer>#logo2 {
+    display: block;
+    margin: auto;
+    padding: 50px 0px 30px 0px;
+    width: 15%;
+}
+
+footer>#reseaux {
+    display: block;
+    margin: auto;
+    width: 10%;
+}
+
+footer>p {
+    margin-top: 30px;
+}
+
+
+
+
+#modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#modal>#content {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+
+    background: rgba(217, 217, 217, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 40px;
+}
+
+#modal>#content>#close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 6%;
+    opacity: 1;
+}
+
+#modal>#content>#close:hover {
+    opacity: 0.7;
+}
+
+#modal>#content>p {
+    padding: 0px 60px;
+    font-size: 8.5pt;
+    line-height: 17px;
+}
+
+#modal>#content>h1 {
+    margin-top: 40px;
+}
+
+#modal>#content>#message {
+    text-align: left;
+}
+
+#modal>#content>form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0px 60px;
+}
+
+#modal>#content>form>input, #modal>#content>form>#profession {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 9px 18px;
+    color: var(--text-color-primary-1);
+    border: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 33px;
+}
+
+#modal>#content>form>input:focus, #modal>#content>form>#profession:focus {
+    outline: none;
+}
+
+#modal>#content>form>#profession {
+    border-right: 16px solid transparent;
+    background: rgba(217, 217, 217, 0.1);
+}
+
+#modal>#content>form>.demi {
+    width: 36%;
+}
+
+#modal>#content>form>div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#modal>#content>form #CGU {
+    width: auto;
+}
+
+#modal>#content>form label[for=CGU] {
+    margin-left: 5px;
+    font-size: 9pt;
+}
+
+#modal>#content>form>button {
+    margin: auto;
+    margin-top: 30px;
+}
+
+#modal>#content>#champs {
+    margin-bottom: 25px;
+}
+
+select>option {
+    color: #080D1A;
+    background: rgba(217, 217, 217, 0.1);
+    backdrop-filter: blur(50px);
+}

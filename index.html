@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Saphyr - Landing page</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/varaibles.css">
+    <link rel="stylesheet" href="./css/fonts/fonts.css">
+
+    <script src="./src/modal.js"></script>
+</head>
+
+<body>
+
+    <img id="wave" src="./img/wave.png">
+
+    <div id="logo">
+        <img src="./img/logo.png">
+    </div>
+
+    <div id="presentation">
+        <div id="infos">
+            <h1>Développe la visibilité de ton art ou de ton événement !</h1>
+            <p>Que tu sois organisateur de soirée, photographe, beatmaker, musicien, graphiste, Saphyr t’offre la possibilité de développer le cristal qui est en toi.</p>
+            <button onclick="openModal()">Créer mon compte</button>
+        </div>
+
+        <div id="image">
+            <img src="./img/double phone.png">
+        </div>
+    </div>
+
+    <img id="arrow" src="./img/arrow.png">
+
+    <img id="partenaires" src="./img/partenaires.png">
+
+    <div id="orga-event">
+        <div id="infos">
+            <h2>Tu es un organisateur d’événement musical ?</h2>
+            <p>• Tes événements sont mis en avant et développent ta clientèle</p>
+            <p>• Trouve de nouveaux talents avec lesquels collaborer</p>
+            <p>• Vends tes billets facilement sur Saphyr</p>
+            <p>• Une plateforme tout en un</p> 
+            <button onclick="openModal()">Créer mon compte</button>
+        </div>
+
+        <div id="image">
+            <img src="./img/gens.png">
+        </div>
+    </div>
+
+
+    <div id="artiste">
+        <div id="image">
+            <img src="./img/homme.png">
+        </div>
+
+        <div id="infos">
+            <h2>Tu es un artiste ?</h2>
+            <p>• Développe la visibilité de ton art</p>
+            <p>• Ne loupe plus aucun événement près de chez toi</p>
+            <p>• Enrichi ton réseau et explore de nouvelles opportunités</p>
+            <p>• Créer ton book directement sur ton profil</p>
+            <button onclick="openModal()">Créer mon compte</button>
+        </div>
+    </div>
+
+    <div id="over-bulles">
+        <img id="bulles" src="./img/bulles.png">
+    </div>
+
+    <div id="download">
+        <div id="infos">
+            <h1>Saphyr t’intéresse ?</h1>
+            <p>Rejoins-nous sur notre application, et n’attend plus pour développer ton réseau ! </p>
+            <button onclick="window.location='https://play.google.com/store/games?gl=FR'">Télécharger l'application</button>
+        </div>
+
+        <div id="image">
+            <img src="./img/app.png">
+        </div>
+    </div>
+
+    <footer>
+        <img id="logo2" src="./img/logo.png">
+
+        <img id="reseaux" src="./img/reseaux.png">
+
+        <p>© 2022 Saphyr, Inc.  •  <a href="./index.html">Confidentialité</a> • <a href="./index.html">Conditions générales</a> • Plan du site • <a href="./index.html">Infos sur l’entreprise</a></p>
+    </footer>
+
+    <div id="modal">
+        <div id="content">
+            <img id="close" src="./img/croix.png" onclick="closeModal()">
+            <h1>Inscris-toi</h1>
+            <p id="message">Veuillez remplir les champs ci-dessous et un membre de notre équipe prendra contact avec vous pour finaliser votre inscription</p>
+            <form action="">
+                <select id="profession" name="jesuis" placeholder="Je suis*">
+                    <option>Je suis*</option>
+                    <option>Organisateur d'événement</option>
+                    <option>Artiste</option>
+                    <option>Beatmaker</option>
+                    <option>DJ</option>
+                    <option>Photographe</option>
+                    <option>Graphiste</option>
+                    <option>Autre</option>
+                </select>
+                <input class="demi" type="text" name="nom" placeholder="Nom*">
+                <input class="demi" type="text" name="prenom" placeholder="Prenom*">
+                <input type="text" name="mail" placeholder="Adresse mail*">
+                <input type="tel" name="tel" placeholder="Numéro de téléphone*">
+                <input type="text" name="societe" placeholder="Nom de la société*">
+                <div>
+                    <input id="CGU" type="checkbox">
+                    <label for="CGU">J'ai lu et accepté les <a href="./index.html">conditions générales d'utilisations</a></label>
+                </div>
+                <button>Envoyer mon inscription</button>
+            </form>
+            <p id="champs">*Champs obligatoires</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -98,7 +98,6 @@ button:hover {
 
 #presentation>#image {
     position: relative;
-    overflow: hidden;
     width: 50%;
 }
 

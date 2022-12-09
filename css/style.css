@@ -63,13 +63,12 @@ button:hover {
 
 #logo {
     margin-top: 40px;
-    margin-bottom: 60px;
     width: 100%;
     text-align: center;
 }
 
 #logo>img {
-    width: 15%;
+    width: 10%;
 }
 
 #presentation {
@@ -77,8 +76,7 @@ button:hover {
     display: flex;
     flex-flow: row wrap;
     height: 450px;
-    margin: 50px;
-    margin-bottom: 20px;
+    margin: 40px 50px 20px 50px;
 
     background: rgba(217, 217, 217, 0.04);
     backdrop-filter: blur(65px);

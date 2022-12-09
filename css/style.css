@@ -252,9 +252,20 @@ footer>#logo2 {
 }
 
 footer>#reseaux {
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     margin: auto;
-    width: 10%;
+}
+
+footer>#reseaux>img {
+    margin: 0px 6px;
+    width: 1.9%;
+    opacity: 1;
+}
+
+footer>#reseaux>img:hover {
+    opacity: 0.7;
 }
 
 footer>p {

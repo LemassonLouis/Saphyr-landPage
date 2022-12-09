@@ -102,7 +102,7 @@
             <h1>Inscris-toi</h1>
             <p id="message">Veuillez remplir les champs ci-dessous et un membre de notre équipe prendra contact avec vous pour finaliser votre inscription</p>
             <form action="" method="post">
-                <select id="profession" name="jesuis" placeholder="Je suis*">
+                <select id="profession" name="jesuis" placeholder="Je suis*" required>
                     <option>Je suis*</option>
                     <option>Organisateur d'événement</option>
                     <option>Artiste</option>
@@ -112,13 +112,13 @@
                     <option>Graphiste</option>
                     <option>Autre</option>
                 </select>
-                <input class="demi" type="text" name="nom" placeholder="Nom*">
-                <input class="demi" type="text" name="prenom" placeholder="Prenom*">
-                <input type="text" name="mail" placeholder="Adresse mail*">
-                <input type="tel" name="tel" placeholder="Numéro de téléphone*">
-                <input type="text" name="societe" placeholder="Nom de la société*">
+                <input class="demi" type="text" name="nom" placeholder="Nom*" required>
+                <input class="demi" type="text" name="prenom" placeholder="Prenom*" required>
+                <input type="text" name="mail" placeholder="Adresse mail*" required>
+                <input type="tel" name="tel" placeholder="Numéro de téléphone*" required>
+                <input type="text" name="societe" placeholder="Nom de la société">
                 <div>
-                    <input id="CGU" type="checkbox">
+                    <input id="CGU" type="checkbox" required>
                     <label for="CGU">J'ai lu et accepté les <a href="./index.html">conditions générales d'utilisations</a></label>
                 </div>
                 <button onclick="closeModal('modal-inscription'); openModal('modal-valide'); return false">Envoyer mon inscription</button>
@@ -129,11 +129,11 @@
 
     <div id="modal-valide" class="modal">
         <div id="content">
-            <img id="close" src="./img/icones/croix.png" onclick="closeModal(modal-valide)">
+            <img id="close" src="./img/icones/croix.png" onclick="closeModal('modal-valide')">
             <h1>Inscription validé</h1>
             <p id="message">L’équipe de Spahyr te remercie pour ton inscription !</p>
-            <p id="">Nous vous avons envoyer un email de confirmation sur votre boite mail : exemple@exemple.fr, veuillez cliquez-sur le lien de confirmation de cet email.</p>
-            <button>Envoyer mon inscription</button>
+            <p id="message2">Nous vous avons envoyer un email de confirmation sur votre boite mail, veuillez cliquez-sur le lien de confirmation de cet email.</p>
+            <button onclick="window.location='https://saphyr-music.fr/'">Accéder à mon compte</button>
         </div>
     </div>
 

@@ -273,9 +273,7 @@ footer>p {
 }
 
 
-
-
-#modal-inscription {
+.modal {
     display: none;
     align-items: center;
     justify-content: center;
@@ -288,7 +286,7 @@ footer>p {
     z-index: 1;
 }
 
-#modal-inscription>#content {
+.modal>#content {
     box-sizing: border-box;
     position: relative;
     max-width: 500px;
@@ -299,7 +297,7 @@ footer>p {
     border-radius: 40px;
 }
 
-#modal-inscription>#content>#close {
+.modal>#content>#close {
     display: block;
     position: absolute;
     top: 20px;
@@ -308,9 +306,11 @@ footer>p {
     opacity: 1;
 }
 
-#modal-inscription>#content>#close:hover {
+.modal>#content>#close:hover {
     opacity: 0.7;
 }
+
+
 
 #modal-inscription>#content>p {
     padding: 0px 60px;
@@ -384,4 +384,22 @@ select>option {
     color: #080D1A;
     background: rgba(217, 217, 217, 0.1);
     backdrop-filter: blur(50px);
+}
+
+#modal-valide>#content>#message {
+    margin: 40px 60px 0px 60px;
+    text-align: left;
+    font-size: 9pt;
+}
+
+#modal-valide>#content>#message2 {
+    margin: 20px 60px 20px 60px;
+    text-align: left;
+    font-size: 8.5pt;
+    line-height: 16px;
+}
+
+#modal-valide>#content>button {
+    margin: auto;
+    margin-bottom: 40px;
 }

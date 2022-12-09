@@ -25,7 +25,7 @@
         <div id="infos">
             <h1>Développe la visibilité de ton art ou de ton événement !</h1>
             <p>Que tu sois organisateur de soirée, photographe, beatmaker, musicien, graphiste, Saphyr t’offre la possibilité de développer le cristal qui est en toi.</p>
-            <button onclick="openModal()">Créer mon compte</button>
+            <button onclick="openModal('modal-inscription')">Créer mon compte</button>
         </div>
 
         <div id="image">
@@ -44,7 +44,7 @@
             <p>• Trouve de nouveaux talents avec lesquels collaborer</p>
             <p>• Vends tes billets facilement sur Saphyr</p>
             <p>• Une plateforme tout en un</p> 
-            <button onclick="openModal()">Créer mon compte</button>
+            <button onclick="openModal('modal-inscription')">Créer mon compte</button>
         </div>
 
         <div id="image">
@@ -64,7 +64,7 @@
             <p>• Ne loupe plus aucun événement près de chez toi</p>
             <p>• Enrichi ton réseau et explore de nouvelles opportunités</p>
             <p>• Créer ton book directement sur ton profil</p>
-            <button onclick="openModal()">Créer mon compte</button>
+            <button onclick="openModal('modal-inscription')">Créer mon compte</button>
         </div>
     </div>
 
@@ -96,12 +96,12 @@
         <p>© 2022 Saphyr, Inc.  •  <a href="./index.html">Confidentialité</a> • <a href="./index.html">Conditions générales</a> • Plan du site • <a href="./index.html">Infos sur l’entreprise</a></p>
     </footer>
 
-    <div id="modal-inscription">
+    <div id="modal-inscription" class="modal">
         <div id="content">
-            <img id="close" src="./img/icones/croix.png" onclick="closeModal()">
+            <img id="close" src="./img/icones/croix.png" onclick="closeModal('modal-inscription')">
             <h1>Inscris-toi</h1>
             <p id="message">Veuillez remplir les champs ci-dessous et un membre de notre équipe prendra contact avec vous pour finaliser votre inscription</p>
-            <form action="">
+            <form action="" method="post">
                 <select id="profession" name="jesuis" placeholder="Je suis*">
                     <option>Je suis*</option>
                     <option>Organisateur d'événement</option>
@@ -121,9 +121,19 @@
                     <input id="CGU" type="checkbox">
                     <label for="CGU">J'ai lu et accepté les <a href="./index.html">conditions générales d'utilisations</a></label>
                 </div>
-                <button>Envoyer mon inscription</button>
+                <button onclick="closeModal('modal-inscription'); openModal('modal-valide'); return false">Envoyer mon inscription</button>
             </form>
             <p id="champs">*Champs obligatoires</p>
+        </div>
+    </div>
+
+    <div id="modal-valide" class="modal">
+        <div id="content">
+            <img id="close" src="./img/icones/croix.png" onclick="closeModal(modal-valide)">
+            <h1>Inscription validé</h1>
+            <p id="message">L’équipe de Spahyr te remercie pour ton inscription !</p>
+            <p id="">Nous vous avons envoyer un email de confirmation sur votre boite mail : exemple@exemple.fr, veuillez cliquez-sur le lien de confirmation de cet email.</p>
+            <button>Envoyer mon inscription</button>
         </div>
     </div>
 

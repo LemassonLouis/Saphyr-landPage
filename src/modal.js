@@ -1,9 +1,9 @@
-function openModal() {
-    const modal = document.getElementById("modal");
+function openModal(id) {
+    const modal = document.getElementById(id);
     modal.style.display = "flex";
 }
 
-function closeModal() {
-    const modal = document.getElementById("modal");
+function closeModal(id) {
+    const modal = document.getElementById(id);
     modal.style.display = "none";
 }

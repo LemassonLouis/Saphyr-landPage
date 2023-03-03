@@ -80,7 +80,7 @@ header>#logo {
     flex-flow: row wrap;
     justify-content: center;
     height: auto;
-    margin: 40px clamp(40px, 10%, 100px) 20px clamp(40px, 10%, 100px);
+    margin: 40px clamp(20px, 5%, 100px) 20px clamp(20px, 5%, 100px);
     padding: 0px max(5%, 70px) 60px max(5%, 70px);
 
     background: rgba(217, 217, 217, 0.04);
@@ -113,13 +113,9 @@ header>#logo {
     border: solid 1px white;
 }
 
-@media screen and (max-width: 600px) {
-    #presentation {
-        padding: 60px;
-    }
-
+@media screen and (max-width: 924px) {
     #presentation>#infos {
-        margin-top: 0px;
+        text-align: center;
     }
 }
 

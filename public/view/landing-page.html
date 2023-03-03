@@ -4,6 +4,9 @@
 <head>
     <title>Saphyr - Landing page</title>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" href="../img/logos/logo blanc.png">
 
     <link rel="stylesheet" href="../css/style.css">
@@ -14,34 +17,35 @@
 </head>
 
 <body>
-    <img id="wave" src="../img/wave.png">
 
-    <div id="logo">
-        <img src="../img/logos/logo typo blanc.png">
-    </div>
+    <header>
+        <img id="wave" src="../img/wave.png" alt="Vague de fond pour styliser">
+        <img id="logo" src="../img/logos/logo typo blanc.png" alt="Logo avec le nom">
+    </header>
 
-    <div id="presentation">
+
+    <section id="presentation">
         <div id="infos">
-            <h1>Développe la visibilité de ton art ou de ton événement !</h1>
-            <p>Que tu sois organisateur de soirée, photographe, beatmaker, musicien, graphiste, Saphyr t’offre la possibilité de développer le cristal qui est en toi.</p>
-            <button onclick="openModal('modal-inscription')">Créer mon compte</button>
+            <h1>Développe la visibilité de ton art !</h1>
+            <p>Que tu sois organisateur de soirée, photographe, beatmaker, musicien, graphiste, créer ton profil et fait briller la pierre precieuse qui est en toi.</p>
+            <button onclick="openModal('modal-inscription')" title="Créer un compte">Créer mon compte</button>
         </div>
 
         <div id="image">
-            <img src="../img/double phone.png">
+            <img src="../img/Profil.png" alt="2 téléphones montrant le contenus de l'application">
         </div>
-    </div>
+    </section>
 
-    <img id="arrow" src="../img/icones/arrow.png">
+    <img id="arrow" src="../img/icones/arrow.png" alt="Flêche vers le bas">
 
-    <img id="partenaires" src="../img/partenaires.png">
+    <img id="partenaires" src="../img/partenaires.png" alt="Partenaires">
 
     <div id="orga-event">
         <div id="infos">
-            <h2>Tu es un organisateur d’événement musical ?</h2>
-            <p>• Tes événements sont mis en avant et développent ta clientèle</p>
-            <p>• Trouve de nouveaux talents avec lesquels collaborer</p>
-            <p>• Vends tes billets facilement sur Saphyr</p>
+            <h2>Trouve la pépite qu'il te faut</h2>
+            <p>• Cherche les profils qui te correspondent</p>
+            <p>• Découvre de nouveaux talents avec lesquels collaborer</p>
+            <p>• Prend contact avec les profesionnels du milieu</p>
             <p>• Une plateforme tout en un</p> 
             <button onclick="openModal('modal-inscription')">Créer mon compte</button>
         </div>
@@ -92,7 +96,7 @@
             <img src="../img/icones/linkedin.png" onclick="window.location='https://fr.linkedin.com/'">
         </div>
 
-        <p>© 2022 Saphyr, Inc.  •  <a href="./index.html">Confidentialité</a> • <a href="./index.html">Conditions générales</a> • Plan du site • <a href="./index.html">Infos sur l’entreprise</a></p>
+        <p>© 2022 Saphyr, Inc.  •  <a href="./index.html">Confidentialité</a> • <a href="./index.html">Conditions générales</a> • Plan du site • <a href="./index.html">Infos sur l’entreprise</a></p>
     </footer>
 
     <div id="modal-inscription" class="modal">

@@ -52,6 +52,12 @@ button:hover {
 
 
 
+.blur {
+    /* backdrop-filter: blur(65px); */
+    backdrop-filter: blur(30px) contrast(0.95);
+}
+
+
 
 #wave {
     position: absolute;
@@ -80,12 +86,9 @@ header>#logo {
     flex-flow: row wrap;
     justify-content: center;
     height: auto;
-    margin: 40px clamp(20px, 5%, 100px) 20px clamp(20px, 5%, 100px);
+    margin: 40px var(--margin-left-right) 20px var(--margin-left-right);
     padding: 0px max(5%, 70px) 60px max(5%, 70px);
 
-    background: rgba(217, 217, 217, 0.04);
-    /* backdrop-filter: blur(65px); */
-    backdrop-filter: blur(30px);
     border-radius: 38px;
 }
 
@@ -113,23 +116,40 @@ header>#logo {
     border: solid 1px white;
 }
 
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 822px) {
     #presentation>#infos {
         text-align: center;
     }
 }
 
-#arrow {
+
+/* #arrow {
     display: block;
     margin: auto;
     width: 30px;
-}
+} */
+
 
 #partenaires {
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-    width: 86%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 50px var(--margin-left-right);
+    opacity: 0.2;
+    filter: grayscale(1);
+}
+
+#partenaires>* {
+    object-fit: contain;
+    width: 10%;
+    min-width: 80px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 822px) {
+    #partenaires {
+        margin: 20px var(--margin-left-right);
+    }
 }
 
 

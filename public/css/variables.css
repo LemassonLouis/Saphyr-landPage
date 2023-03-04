@@ -7,4 +7,6 @@
 
     --CTA-1: #021B79;
     --CTA-2: rgba(5, 117, 230, 0.75);
+
+    --margin-left-right: clamp(20px, 5%, 100px);
 }

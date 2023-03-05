@@ -62,7 +62,6 @@ button:hover {
     left: 50%;
     transform: translate(-50%);
     width: 10%;
-    height: auto;
     z-index: -1;
 }
 

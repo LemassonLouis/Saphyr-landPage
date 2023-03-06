@@ -54,9 +54,39 @@ button:hover {
 
 
 
+.converting {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    margin: 0px var(--margin-left-right);
+    padding: 0px max(5%, 70px);
+}
+
+.converting>div {
+    width: 50%;
+    min-width: 300px;
+}
+
+.converting>#infos {
+    box-sizing: border-box;
+    align-self: center;
+    padding-right: 30px;
+}
+
+.converting>#infos>button {
+    margin-top: 10px;
+}
+
+.converting>#image {
+    text-align: center;
+}
+
 .blur {
+    border-radius: 38px;
     backdrop-filter: blur(30px) contrast(0.95);
-    -webkit-backdrop-filter: blur(30px) contrast(0.95)
+    -webkit-backdrop-filter: blur(30px) contrast(0.95);
 }
 
 
@@ -83,35 +113,18 @@ header>#logo {
 
 #converting1 {
     overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    height: auto;
-    margin: 40px var(--margin-left-right) 20px var(--margin-left-right);
-    padding: 0px max(5%, 70px) 60px max(5%, 70px);
 
-    border-radius: 38px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 #converting1>div {
-    width: 50%;
-    min-width: 300px;
     margin: 60px 0px 0px 0px;
 }
 
-#converting1>#infos {
-    box-sizing: border-box;
-    align-self: center;
-    padding-right: 30px;
-}
-
-#converting1>#infos>button {
-    margin-top: 10px;
-}
-
 #converting1>#image {
-    text-align: center;
     max-height: -webkit-fill-available;
 }
 
@@ -147,63 +160,39 @@ header>#logo {
 #partenaires>* {
     object-fit: contain;
     width: 10%;
-    min-width: 80px;
+    min-width: 50px;
     max-width: 150px;
     margin: 15px;
 }
 
 @media screen and (max-width: 822px) {
     #partenaires {
-        margin: 20px var(--margin-left-right);
+        margin: 40px var(--margin-left-right);
     }
 }
 
 
 #converting2 {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 80px var(--margin-left-right);
-    padding: 0px max(5%, 70px);
+    margin-top: 80px;
 }
 
-#converting2>div {
-    width: 50%;
-    min-width: 300px;
-}
-
-#converting2>#infos {
-    align-self: center;
-}
-
-#converting2>#infos>h2 {
-    margin-bottom: 50px;
-}
-
-#converting2>#infos>button {
-    margin-top: 20px;
-}
-
-#converting2>#image {
-    text-align: center;
-}
-
-#converting2>#image>* {
-    border: solid 1px white;
+#converting2>#infos>ul {
+    text-align: left;
 }
 
 #converting2>#image>#img-page-research {
     width: 250px;
+    border: solid 1px white;
 }
 
 #converting2>#image>#img-page-messages {
     width: 200px;
+    border: solid 1px white;
 }
 
 @media screen and (max-width: 1174px) {
     #converting2 {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     #converting2>#infos {
@@ -237,57 +226,41 @@ header>#logo {
 }
 
 
-#download {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    height: 300px;
-    margin: 120px 100px;
-
-    background: rgba(217, 217, 217, 0.04);
-    backdrop-filter: blur(65px);
-    border-radius: 38px;
-}
-
-#download>#infos {
-    box-sizing: border-box;
-    align-self: center;
-    width: 50%;
-    padding: 20px 20px 20px 60px;
-}
-
-#download>#infos>button {
-    margin-top: 10px;
-}
-
-#download>#image {
-    position: relative;
-    width: 50%;
-}
-
-#download>#image>img {
-    position: absolute;
-    bottom: 0px;
-    right: 50%;
-    width: 70%;
-    transform: translate(50%);
-    z-index: 0;
-}
-
-
 #over-bulles {
     position: relative;
 }
 
 #bulles {
     position: absolute;
-    display: block;
-    width: 20%;
-    right: 50px;
-    bottom: -500px;
+    width: 300px;
+    right: 3%;
+    top: 80px;
     z-index: 0;
 }
 
+
+#converting3 {
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+#converting3>#image {
+    margin-top: 60px;
+}
+
+#converting3>#image>img {
+    margin-bottom: -4px;
+    width: 300px;
+}
+
+@media screen and (max-width: 822px) {
+    #converting3>#infos {
+        margin-top: 60px;
+        text-align: center;
+        padding-right: 0px;
+    }
+}
 
 
 footer {

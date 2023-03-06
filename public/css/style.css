@@ -222,8 +222,17 @@ header>#logo {
     #converting2{
         padding: 0px;
     }
+
     #converting2>#image {
         white-space: unset;
+    }
+
+    #converting2>#image>#img-page-research {
+        width: 50%;
+    }
+    
+    #converting2>#image>#img-page-messages {
+        width: 40%;
     }
 }
 

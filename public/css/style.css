@@ -55,8 +55,8 @@ button:hover {
 
 
 .blur {
-    /* backdrop-filter: blur(65px); */
     backdrop-filter: blur(30px) contrast(0.95);
+    -webkit-backdrop-filter: blur(30px) contrast(0.95)
 }
 
 
@@ -81,7 +81,7 @@ header>#logo {
 }
 
 
-#presentation {
+#converting1 {
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
@@ -94,33 +94,36 @@ header>#logo {
     border-radius: 38px;
 }
 
-#presentation>* {
-    min-width: 300px;
+#converting1>div {
     width: 50%;
+    min-width: 300px;
     margin: 60px 0px 0px 0px;
 }
 
-#presentation>#infos {
+#converting1>#infos {
+    box-sizing: border-box;
     align-self: center;
+    padding-right: 30px;
 }
 
-#presentation>#infos>button {
+#converting1>#infos>button {
     margin-top: 10px;
 }
 
-#presentation>#image {
+#converting1>#image {
     text-align: center;
     max-height: -webkit-fill-available;
 }
 
-#presentation>#image>img {
+#converting1>#image>img {
     margin-bottom: -110px;
     border: solid 1px white;
 }
 
 @media screen and (max-width: 822px) {
-    #presentation>#infos {
+    #converting1>#infos {
         text-align: center;
+        padding-right: 0px;
     }
 }
 
@@ -145,6 +148,7 @@ header>#logo {
     object-fit: contain;
     width: 10%;
     min-width: 80px;
+    max-width: 150px;
     margin: 15px;
 }
 
@@ -155,34 +159,72 @@ header>#logo {
 }
 
 
-#orga-event {
+#converting2 {
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    margin: 80px 100px 0px 100px;
+    justify-content: center;
+    margin: 80px var(--margin-left-right);
+    padding: 0px max(5%, 70px);
 }
 
-#orga-event>#infos {
-    align-self: center;
+#converting2>div {
     width: 50%;
+    min-width: 300px;
 }
 
-#orga-event>#infos>h2 {
+#converting2>#infos {
+    align-self: center;
+}
+
+#converting2>#infos>h2 {
     margin-bottom: 50px;
 }
 
-#orga-event>#infos>button {
+#converting2>#infos>button {
     margin-top: 20px;
 }
 
-
-#orga-event>#image {
+#converting2>#image {
     text-align: center;
-    width: 50%
 }
 
-#orga-event>#image>img {
-    width: 80%;
+#converting2>#image>* {
+    border: solid 1px white;
+}
+
+#converting2>#image>#img-page-research {
+    width: 250px;
+}
+
+#converting2>#image>#img-page-messages {
+    width: 200px;
+}
+
+@media screen and (max-width: 1174px) {
+    #converting2 {
+        margin-top: 50px;
+    }
+
+    #converting2>#infos {
+        padding-right: 0px;
+        text-align: center;
+    }
+    
+    #converting2>#image {
+        margin-top: 50px;
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    #converting2{
+        padding: 0px;
+    }
+    #converting2>#image {
+        white-space: unset;
+    }
 }
 
 

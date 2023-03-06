@@ -237,37 +237,6 @@ header>#logo {
 }
 
 
-#artiste {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0px 100px;
-}
-
-#artiste>#infos {
-    align-self: center;
-    width: 50%;
-}
-
-#artiste>#infos>h2 {
-    margin-bottom: 50px;
-}
-
-#artiste>#infos>button {
-    margin-top: 20px;
-}
-
-
-#artiste>#image {
-    text-align: center;
-    width: 50%
-}
-
-#artiste>#image>img {
-    width: 80%;
-}
-
-
 #download {
     box-sizing: border-box;
     display: flex;

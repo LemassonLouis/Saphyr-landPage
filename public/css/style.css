@@ -34,7 +34,7 @@ a:hover {
     opacity: 0.7;
 }
 
-button {
+.primary-button {
     /* background-color: linear-gradient(#0575E6, #021B79); */
     /* background: linear-gradient(264.43deg, rgba(5, 117, 230, 0.75) -89.49%, #021B79 92.02%); */
     padding: 15px 40px;
@@ -48,7 +48,7 @@ button {
     opacity: 1;
 }
 
-button:hover {
+.primary-button:hover {
     opacity: 0.7;
 }
 
@@ -295,66 +295,55 @@ footer>#reseaux>img:hover {
 
 
 .modal {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.modal>#content {
-    box-sizing: border-box;
-    position: relative;
-    max-width: 500px;
+    width: 500px;
+    color: white;
     text-align: center;
-
-    background: rgba(217, 217, 217, 0.1);
-    backdrop-filter: blur(50px);
-    border-radius: 40px;
+    background: none;
+    border: none;
 }
 
-.modal>#content>#close {
-    display: block;
+.modal #close {
     position: absolute;
-    top: 20px;
-    right: 40px;
-    width: 6%;
-    opacity: 1;
+    top: 22px;
+    right: 20px;
+    background: none;
+    border: none;
 }
 
-.modal>#content>#close:hover {
+.modal #close:hover {
     opacity: 0.7;
 }
 
+.modal #close>img {
+    width: 30px;
+}
 
+.modal>#close:hover {
+    opacity: 0.7;
+}
 
-#modal-inscription>#content>p {
+#modal-inscription>p {
     padding: 0px 60px;
     font-size: 8.5pt;
     line-height: 17px;
 }
 
-#modal-inscription>#content>h1 {
+#modal-inscription>h1 {
     margin-top: 40px;
 }
 
-#modal-inscription>#content>#message {
+#modal-inscription>#message {
     text-align: left;
 }
 
-#modal-inscription>#content>form {
+#modal-inscription>form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 0px 60px;
 }
 
-#modal-inscription>#content>form>input, #modal-inscription>#content>form>#profession {
+#modal-inscription>form>input, #modal-inscription>form>#profession {
     width: 100%;
     margin: 10px 0px;
     padding: 9px 18px;
@@ -364,48 +353,70 @@ footer>#reseaux>img:hover {
     border-radius: 33px;
 }
 
-#modal-inscription>#content>form>input:focus, #modal-inscription>#content>form>#profession:focus {
+#modal-inscription>form>input:focus, #modal-inscription>form>#profession:focus {
     outline: none;
 }
 
-#modal-inscription>#content>form>#profession {
+#modal-inscription>form>#profession {
     border-right: 16px solid transparent;
     background: rgba(217, 217, 217, 0.1);
 }
 
-#modal-inscription>#content>form>.demi {
+#modal-inscription>form>.demi {
     width: 36%;
 }
 
-#modal-inscription>#content>form>div {
+#modal-inscription>form>div {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
     align-items: center;
 }
 
-#modal-inscription>#content>form #CGU {
+#modal-inscription>form #CGU {
     width: auto;
 }
 
-#modal-inscription>#content>form label[for=CGU] {
+#modal-inscription>form label[for=CGU] {
     margin-left: 5px;
     font-size: 9pt;
+    text-align: left;
 }
 
-#modal-inscription>#content>form>button {
+#modal-inscription>form>#creer-compte {
     margin: auto;
     margin-top: 30px;
 }
 
-#modal-inscription>#content>#champs {
+#modal-inscription>#champs {
     margin-bottom: 25px;
 }
 
-select>option {
+select option, select optgroup {
     color: #080D1A;
     background: rgba(217, 217, 217, 0.1);
     backdrop-filter: blur(50px);
 }
+
+@media screen and (max-width: 600px) {
+    .modal {
+        margin: auto 20px;
+        width: auto;
+    }
+
+    #modal-inscription>#message {
+        padding: 0px clamp(10px, 12%, 60px);
+    }
+
+    #modal-inscription>form {
+        margin: 0px auto;
+        width: 80%;
+    }
+
+    #modal-inscription>form>.demi {
+        width: 100%;
+    }
+}
+
 
 #modal-valide>#content>#message {
     margin: 40px 60px 0px 60px;

@@ -397,6 +397,10 @@ select option, select optgroup {
     backdrop-filter: blur(50px);
 }
 
+#modal-inscription>form>#profession:has(option[hidden]:checked) {
+    color: #777;
+}
+
 @media screen and (max-width: 600px) {
     .modal {
         margin: auto 20px;

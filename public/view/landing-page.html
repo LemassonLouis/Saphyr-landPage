@@ -108,11 +108,11 @@
         <h1>Inscris-toi</h1>
         <p id="message">Veuillez remplir les champs ci-dessous et un membre de notre équipe prendra contact avec vous pour finaliser votre inscription</p>
         <form action="" method="dialog">
-            <button id="close" title="Fermer la fenêtre" type="button" onclick="document.getElementById('modal-inscription').close()">
-                <img src="../img/icones/croix.png" alt="Croix de fermeture">
+            <button id="close" title="Fermer la fenêtre" type="reset" onclick="document.getElementById('modal-inscription').close()">
+                <img src="../img/icones/croix.png" alt="Croix de fermeture de la fenêtre">
             </button>
-            <select id="profession" name="profession" placeholder="Je suis*" required>
-                <option disabled selected>Profession*</option>
+            <select id="profession" name="profession" required>
+                <option value="" disabled selected hidden>Profession*</option>
                 <optgroup label="Artiste">
                     <option>Artiste (autre)</option>
                     <option>Musicien</option>

@@ -129,8 +129,9 @@ header>#logo {
 }
 
 #converting1>#image>img {
-    margin-bottom: -110px;
-    border: solid 1px white;
+    margin-bottom: -90px;
+    width: 400px;
+    max-width: -webkit-fill-available;
 }
 
 @media screen and (max-width: 822px) {
@@ -180,14 +181,9 @@ header>#logo {
     text-align: left;
 }
 
-#converting2>#image>#img-page-research {
-    width: 250px;
-    border: solid 1px white;
-}
-
-#converting2>#image>#img-page-messages {
-    width: 200px;
-    border: solid 1px white;
+#converting2>#image img {
+    width: 400px;
+    max-width: -webkit-fill-available;
 }
 
 @media screen and (max-width: 1174px) {
@@ -202,26 +198,12 @@ header>#logo {
     
     #converting2>#image {
         margin-top: 50px;
-        width: auto;
-        white-space: nowrap;
     }
 }
 
 @media screen and (max-width: 666px) {
     #converting2{
         padding: 0px;
-    }
-
-    #converting2>#image {
-        white-space: unset;
-    }
-
-    #converting2>#image>#img-page-research {
-        width: 50%;
-    }
-    
-    #converting2>#image>#img-page-messages {
-        width: 40%;
     }
 }
 

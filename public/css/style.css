@@ -117,11 +117,11 @@ header>#logo {
     height: auto;
     margin-top: 40px;
     margin-bottom: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 #converting1>div {
-    margin: 60px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 #converting1>#image {
@@ -129,8 +129,8 @@ header>#logo {
 }
 
 #converting1>#image>img {
-    margin-bottom: -90px;
-    width: 400px;
+    margin-bottom: -65px;
+    width: 500px;
     max-width: -webkit-fill-available;
 }
 
@@ -182,7 +182,7 @@ header>#logo {
 }
 
 #converting2>#image img {
-    width: 400px;
+    width: 500px;
     max-width: -webkit-fill-available;
 }
 
@@ -233,7 +233,7 @@ header>#logo {
 
 #converting3>#image>img {
     margin-bottom: -4px;
-    width: 300px;
+    width: 400px;
 }
 
 @media screen and (max-width: 822px) {

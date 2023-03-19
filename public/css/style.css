@@ -234,6 +234,7 @@ header>#logo {
 #converting3>#image>img {
     margin-bottom: -4px;
     width: 400px;
+    max-width: -webkit-fill-available;
 }
 
 @media screen and (max-width: 822px) {

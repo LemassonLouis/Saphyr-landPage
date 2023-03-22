@@ -7,3 +7,8 @@
     font-family: "Poppind Regular";
     src: url('./Poppins-Regular.ttf');
 }
+
+@font-face {
+    font-family: "Qualy Bold";
+    src: url('./Qualy-Bold.ttf');
+}

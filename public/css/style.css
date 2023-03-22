@@ -6,7 +6,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Poppins Regular", sans-serif;
-    /* font-size: 24px; */
+    font-size: 18px;
     color: var(--text-color-primary-2);
     background: linear-gradient(90deg, var(--background-color-1), var(--background-color-2));
     z-index: 0;
@@ -18,7 +18,8 @@ h1, h2 {
 }
 
 h1 {
-    /* font-size: 60px; */
+    font-size: 50px;
+    line-height: 50px;
 }
 
 h2 {
@@ -39,8 +40,7 @@ a:hover {
     /* background: linear-gradient(264.43deg, rgba(5, 117, 230, 0.75) -89.49%, #021B79 92.02%); */
     padding: 15px 40px;
     font-family: "Poppins Regular", sans-serif;
-    /* font-size: 24px; */
-    font-size: 9pt;
+    font-size: 14px;
     color: var(--text-color-primary-1);
     background: linear-gradient(90deg, var(--CTA-1), var(--CTA-2));
     border: 0;
